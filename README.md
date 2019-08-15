@@ -1,20 +1,20 @@
-Device Tree For Amazon Fire 7
-=============================
+Device Tree For Amazon Fire 2019 (Incomplete WIP)
+=================================================
 
 Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Quad 1.3 GHz Cortex-A7
-CHIPSET | Mediatek MT8127
-GPU     | Mali-450 MP
+-------:|:--------------------------------------------------
+CPU     | Quad (4x1.3 GHz Cortex-A35)
+CHIPSET | Mediatek MT8163
+GPU     | Mali 720
 Memory  | 1GB RAM
-Android | 5.0
-Storage | 16 GB
+Android | 7.0
+Storage | 16/32 GB
 MicroSD | yes
-Battery | 2980 mAh
+Battery | ? mAh
 Display | 7"
-Front Camera  | 0.3 MP
+Front Camera  | 2 MP
 Rear Camera  | 2 MP
 
-![Fire 7](https://cnet1.cbsistatic.com/img/xQi3z27APNet9u6_jXURLg8YP7U=/770x433/2017/06/01/91b72246-686f-4be5-baf7-3bb26a6ba518/amazon-fire-7-15.jpg "Fire 7")
+![Amazon Fire 2019](https://ebookfriendly.com/wp-content/uploads/2019/05/Amazon-Fire-7-2019-four-color-options-840x730.jpg "Amazon Fire 2019")
 
-This branch is for building LineageOS 12.1
+This branch is for building LineageOS 14.1
