@@ -61,3 +61,8 @@ int __vitals_log_print(int bufID, int prio, const char *tag, const char *fmt, ..
 
 	return __android_log_write(ANDROID_LOG_DEBUG, tag, "__vitals_log_print not implemented");
 }
+
+void __metrics_log_print(void)
+{
+	/* IDA showed no parameters for this function */
+}
