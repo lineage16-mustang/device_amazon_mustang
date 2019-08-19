@@ -114,6 +114,15 @@ BOARD_SECCOMP_POLICY += $(DEVICE_COMMON)/seccomp
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 
+# Shims
+LINKER_FORCED_SHIM_LIBS := \
+    /system/lib/libasp.so|libshim_liblog.so \
+    /system/lib/libbinder.so|libshim_libbinder.so \
+    /system/lib/liblog.so|libshim_liblog.so \
+    /system/lib/libcutils.so|libshim_liblog.so \
+    /system/vendor/lib/libwvm.so|libshim_libwvm.so \
+    /system/lib/libgui.so|libshim_libgui.so
+
 # TWRP
 ifneq (,$(strip $(wildcard bootable/recovery-twrp/twrp.cpp)))
 RECOVERY_VARIANT := twrp
