@@ -108,6 +108,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 BLOCK_BASED_OTA := true
 
+# Seccomp filter
+BOARD_SECCOMP_POLICY += $(DEVICE_COMMON)/seccomp
+
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 
