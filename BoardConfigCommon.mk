@@ -106,7 +106,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
 
-BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := true
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
