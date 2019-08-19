@@ -48,6 +48,13 @@ KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/gcc-
 BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
+# Build a separate vendor.img
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
+
+# Binder API version
+TARGET_USES_64_BIT_BINDER := false
+
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -DMTK_HARDWARE -mfpu=neon -mfloat-abi=softfp
