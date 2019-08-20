@@ -35,10 +35,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_COMMON)/rootdir,root)
-
 # Config files
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -48,6 +44,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_COMMON)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(DEVICE_COMMON)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(DEVICE_COMMON)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_COMMON)/rootdir,root)
 
 # Shim old binaries
 PRODUCT_PACKAGES += \
