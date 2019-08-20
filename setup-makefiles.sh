@@ -16,7 +16,7 @@
 set -e
 
 VENDOR=amazon
-DEVICE_COMMON=mt8163-common
+DEVICE_COMMON=mustang
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
