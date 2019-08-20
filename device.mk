@@ -1,5 +1,5 @@
-DEVICE_COMMON := device/amazon/mt8163-common
-VENDOR_COMMON := vendor/amazon/mt8163-common
+DEVICE_COMMON := device/amazon/mustang
+VENDOR_COMMON := vendor/amazon/mustang
 
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_COMMON)/overlay
