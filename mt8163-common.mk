@@ -76,10 +76,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	power.default
 
-# network
+# Network
 PRODUCT_PACKAGES += \
-    netd
-    
+    netd \
+
 WITH_EXFAT := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
