@@ -49,6 +49,13 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_COMMON)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(DEVICE_COMMON)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
 
+# Shim old binaries
+PRODUCT_PACKAGES += \
+	libshim_libbinder \
+	libshim_liblog \
+	libshim_libwvm \
+    libshim_libgui
+
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
