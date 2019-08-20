@@ -6,3 +6,10 @@ $(call inherit-product-if-exists, vendor/cm/config/common_full_tablet_wifionly.m
 
 # Inherit device configuration
 $(call inherit-product, device/amazon/mustang/full_mustang.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := mustang
+PRODUCT_NAME := lineage_mustang
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Fire
+PRODUCT_MANUFACTURER := amzn
