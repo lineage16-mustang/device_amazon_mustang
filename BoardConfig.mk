@@ -39,7 +39,7 @@ BOARD_MKBOOTIMG_ARGS := \
     --kernel_offset $(BOARD_KERNEL_OFFSET) \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) \
-    --second_offset $(BOARD_SECOND_OFFSET )
+    --second_offset $(BOARD_SECOND_OFFSET)
 
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_SOURCE := $(KERNEL_COMMON)
