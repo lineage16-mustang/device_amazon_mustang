@@ -19,9 +19,6 @@ etc/wifi/wpa_supplicant.conf
 etc/wifi/wpa_supplicant_overlay.conf
 etc/media_codecs_mediatek_audio.xml
 etc/media_codecs_mediatek_video.xml
-#etc/init/init.bt_drv.rc
-#etc/init/init.wlan_drv.rc
-#etc/init/init.wmt_drv.rc
 etc/init/timeupdate.rc
 etc/audio_device.xml
 etc/audio_policy.conf
