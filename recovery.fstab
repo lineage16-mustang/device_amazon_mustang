@@ -8,4 +8,5 @@
 /dev/block/platform/soc/11230000.mmc/by-name/MISC     /misc       emmc      defaults        defaults
 /dev/block/platform/soc/11230000.mmc/by-name/recovery /recovery   emmc      defaults        defaults
 /dev/block/platform/soc/11230000.mmc/by-name/system   /system     ext4      defaults        defaults
+/dev/block/platform/soc/11230000.mmc/by-name/vendor   /vendor     ext4      defaults        defaults
 /dev/block/mmcblk0boot0                               /boot0      emmc      defaults        defaults
