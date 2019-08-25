@@ -13,8 +13,3 @@ PRODUCT_NAME := lineage_mustang
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Fire
 PRODUCT_MANUFACTURER := amzn
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=mustang \
-    BUILD_FINGERPRINT=Amazon/mustang/mustang:6.0/NS6312/1827N:user/amz-p,release-keys
-    PRIVATE_BUILD_DESC="mustang-user 6.0 NS6312 1827 amz-p,release-keys"
