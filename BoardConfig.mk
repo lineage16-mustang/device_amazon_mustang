@@ -55,6 +55,7 @@ MTK_HARDWARE := true
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Binder API version
 TARGET_USES_64_BIT_BINDER := false
