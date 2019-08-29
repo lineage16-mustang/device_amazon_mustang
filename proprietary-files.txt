@@ -36,8 +36,6 @@ etc/firmware/SMicBin_rt5518_mode22.dat
 etc/firmware/SMicBin_rt5518_mode23.dat
 etc/firmware/SMicBin_rt5518_mode24.dat
 etc/init/timeupdate.rc
-etc/media_codecs_mediatek_audio.xml
-etc/media_codecs_mediatek_video.xml
 etc/wifi/p2p_supplicant_overlay.conf
 etc/wifi/wpa_supplicant_overlay.conf
 etc/wifi/wpa_supplicant.conf
