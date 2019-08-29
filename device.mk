@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
 	
 # Power
 PRODUCT_PACKAGES += \
-	power.default
+	power.mt8163
 
 # Network
 PRODUCT_PACKAGES += \
