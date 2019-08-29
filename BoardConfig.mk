@@ -50,7 +50,6 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_HAS_MTK_HARDWARE := true
-MTK_HARDWARE := true
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
