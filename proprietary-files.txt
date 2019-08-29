@@ -1,3 +1,18 @@
+# Media Codecs
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libMtkOmxVdecEx.so
+vendor/lib/libMtkOmxVenc.so
+vendor/lib/libvc1dec_sa.ca7.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so
+
 bin/amzn_dha_hmac
 bin/amzn_drmprov_check
 bin/idme
@@ -89,7 +104,6 @@ vendor/etc/audio_device.xml
 vendor/etc/audio_effects.conf
 vendor/etc/audio_em.xml
 vendor/etc/audio_policy.conf
-vendor/etc/mtk_omx_core.cfg
 vendor/firmware/ROMv2_lm_patch_1_0_hdr.bin
 vendor/firmware/ROMv2_lm_patch_1_1_hdr.bin
 vendor/firmware/WIFI_RAM_CODE_8163
@@ -180,7 +194,6 @@ vendor/lib/libgpu_aux.so
 vendor/lib/libgralloc_extra.so
 vendor/lib/libgui_ext.so
 vendor/lib/libhdrproc.so
-vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libhwm.so
 vendor/lib/libimageio.so
 vendor/lib/libimageio_FrmB.so
@@ -194,7 +207,6 @@ vendor/lib/liblic_s263.so
 vendor/lib/libm4u.so
 vendor/lib/libmhalImageCodec.so
 vendor/lib/libminiui.so
-vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmrdump.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtcloader.so
@@ -203,10 +215,6 @@ vendor/lib/libmtk_drvb.so
 vendor/lib/libmtkjpeg.so
 vendor/lib/libmtklimiter.so
 vendor/lib/libmtk_mmutils.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libMtkOmxVdecEx.so
-vendor/lib/libMtkOmxVenc.so
 vendor/lib/libmtkplayer.so
 vendor/lib/libmtkshifter.so
 vendor/lib/libnvram.so
@@ -223,14 +231,9 @@ vendor/lib/libtz_uree.so
 vendor/lib/libui_ext.so
 vendor/lib/liburee_meta_drmkeyinstall_v2.so
 vendor/lib/lib_uree_mtk_video_secure_al.so
-vendor/lib/libvc1dec_sa.ca7.so
-vendor/lib/libvcodecdrv.so
-vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
-vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwifitest.so
 vendor/smartvolume/audio_policy_volumes.xml
 vendor/smartvolume/default_volume_tables.xml
+
