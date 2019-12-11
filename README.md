@@ -3,14 +3,14 @@ Device Tree For Amazon Fire 2019 (Incomplete WIP)
 
 Basic   | Spec Sheet
 -------:|:--------------------------------------------------
-CPU     | Quad (4x1.3 GHz Cortex-A35)
+CPU     | Quad (4x1.3 GHz Cortex-A53)
 CHIPSET | Mediatek MT8163
 GPU     | Mali 720
 Memory  | 1GB RAM
 Android | 7.0
 Storage | 16/32 GB
 MicroSD | yes
-Battery | ? mAh
+Battery | 3200 mAh
 Display | 7"
 Front Camera  | 2 MP
 Rear Camera  | 2 MP
