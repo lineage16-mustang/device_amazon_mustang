@@ -259,10 +259,6 @@ vendor/etc/power_whitelist_cfg.xml
 vendor/etc/audio_policy.conf
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/slp_conf
-vendor/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
-vendor/overlay/SysuiDarkTheme/SysuiDarkThemeOverlay.apk
-vendor/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
-vendor/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
 vendor/odm/etc/vintf/manifest_ss
 vendor/odm/etc/vintf/manifest_qsqs
 vendor/odm/etc/vintf/manifest_tsts
