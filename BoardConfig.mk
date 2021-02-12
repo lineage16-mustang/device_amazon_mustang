@@ -102,7 +102,7 @@ BLOCK_BASED_OTA := true
 BOARD_SECCOMP_POLICY += $(DEVICE_COMMON)/seccomp
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON)/sepolicy
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
