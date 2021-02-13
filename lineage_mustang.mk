@@ -2,7 +2,7 @@
 TARGET_SCREEN_WIDTH := 600
 TARGET_SCREEN_HEIGHT := 1024
 
-$(call inherit-product-if-exists, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/amazon/mustang/full_mustang.mk)
