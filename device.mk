@@ -76,7 +76,10 @@ PRODUCT_PACKAGES += \
 # Graphics
 PRODUCT_PACKAGES += \
     libion
-	
+
+# HIDL
+-include $(DEVICE_COMMON)/hidl.mk
+
 # Power
 PRODUCT_PACKAGES += \
 	power.mt8163
