@@ -300,9 +300,6 @@ vendor/etc/slp_conf
 vendor/etc/throttle.sh
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/voice_dsp_audio_policy_configuration.xml
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant.conf
 vendor/firmware/gt9xx_fw.bin
 vendor/firmware/md32_d.bin
 vendor/firmware/md32_p.bin
