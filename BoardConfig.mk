@@ -1,12 +1,12 @@
-DEVICE_COMMON := device/amazon/mustang
-KERNEL_COMMON := kernel/amazon/mustang
-VENDOR_COMMON := vendor/amazon/mustang
+DEVICE_PATH := device/amazon/mustang
+KERNEL_PATH := kernel/amazon/mustang
+VENDOR_PATH := vendor/amazon/mustang
 
 # headers
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_COMMON)/include
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # inherit from the proprietary version
--include $(VENDOR_COMMON)/BoardConfigVendor.mk
+-include $(VENDOR_PATH)/BoardConfigVendor.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
@@ -42,7 +42,7 @@ BOARD_MKBOOTIMG_ARGS := \
     --second_offset $(BOARD_SECOND_OFFSET)
 
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := $(KERNEL_COMMON)
+TARGET_KERNEL_SOURCE PATH)
 KERNEL_TOOLCHAIN_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-eabi/bin/arm-eabi-
 
 TARGET_KERNEL_CONFIG := mustang_defconfig
@@ -73,11 +73,11 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # BT
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_COMMON)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
 # Graphics
-BOARD_EGL_CFG := $(DEVICE_COMMON)/configs/egl.cfg
+BOARD_EGL_CFG := $(DEVICE_PATH)/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 0
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -97,14 +97,14 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BLOCK_BASED_OTA := true
 
 # Manifest
-DEVICE_MANIFEST_FILE := $(DEVICE_COMMON)/manifest.xml
-DEVICE_MATRIX_FILE   := $(DEVICE_COMMON)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY += $(DEVICE_COMMON)/seccomp
+BOARD_SECCOMP_POLICY += $(DEVICE_PATH)/seccomp
 
 # SELinux
-#BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file

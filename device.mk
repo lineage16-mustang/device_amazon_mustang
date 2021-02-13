@@ -1,12 +1,12 @@
-DEVICE_COMMON := device/amazon/mustang
-VENDOR_COMMON := vendor/amazon/mustang
+DEVICE_PATH := device/amazon/mustang
+VENDOR_PATH := vendor/amazon/mustang
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_COMMON)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Install init.d scripts
 PRODUCT_COPY_FILES += \
-    $(DEVICE_COMMON)/configs/99exfat-support:system/etc/init.d/99exfat-support
+    $(DEVICE_PATH)/configs/99exfat-support:system/etc/init.d/99exfat-support
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_COMMON)/rootdir,root)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/rootdir,root)
 
 # Shim old binaries
 PRODUCT_PACKAGES += \
@@ -75,15 +75,15 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_COMMON)/bluetooth/config/bt_did.conf:$(TARGET_OUT)/etc/bluetooth/bt_did.conf \
-    $(DEVICE_COMMON)/bluetooth/config/bt_stack.conf:$(TARGET_OUT)/etc/bluetooth/bt_stack.conf
+    $(DEVICE_PATH)/bluetooth/config/bt_did.conf:$(TARGET_OUT)/etc/bluetooth/bt_did.conf \
+    $(DEVICE_PATH)/bluetooth/config/bt_stack.conf:$(TARGET_OUT)/etc/bluetooth/bt_stack.conf
 
 # Graphics
 PRODUCT_PACKAGES += \
     libion
 
 # HIDL
--include $(DEVICE_COMMON)/hidl.mk
+-include $(DEVICE_PATH)/hidl.mk
 
 # Power
 PRODUCT_PACKAGES += \
@@ -104,4 +104,4 @@ $(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, $(VENDOR_COMMON)/mustang-vendor.mk)
+$(call inherit-product-if-exists, $(VENDOR_PATH)/mustang-vendor.mk)
