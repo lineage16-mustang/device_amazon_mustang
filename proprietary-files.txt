@@ -208,7 +208,6 @@ vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/ecc_list_OP17.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/mtk_omx_core.cfg
-vendor/etc/fstab.mt8163
 vendor/etc/ecc_list.xml
 vendor/etc/cdma_ecc_list.xml
 vendor/etc/cdma_ecc_list_OP01.xml

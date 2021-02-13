@@ -75,7 +75,7 @@ on fs
     mkdir /dev/block/platform/mtk-msdc.0
     symlink ../soc/11230000.mmc /dev/block/platform/mtk-msdc.0/11230000.MSDC0
     exec /system/bin/resize2fs -f /dev/block/platform/bootdevice/by-name/userdata
-    mount_all /vendor/etc/fstab.mt8163
+    mount_all /fstab.mt8163
     write /proc/bootprof "INIT:Mount_END"
     write /proc/sys/vm/page-cluster 0
     swapon_all /fstab.enableswap
