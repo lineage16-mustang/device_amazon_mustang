@@ -49,6 +49,8 @@ on boot
     setprop vendor.usb.temp ""
     setprop vendor.usb.acm_enable 0
     setprop vendor.usb.clear boot
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
 
 on post-fs-data
     chown radio system /sys/class/usb_rawbulk/data/enable
