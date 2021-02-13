@@ -77,10 +77,6 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    libbt-vendor \
-    libbluetooth_mtk
-
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/config/bt_did.conf:$(TARGET_OUT)/etc/bluetooth/bt_did.conf \
     $(DEVICE_PATH)/bluetooth/config/bt_stack.conf:$(TARGET_OUT)/etc/bluetooth/bt_stack.conf
