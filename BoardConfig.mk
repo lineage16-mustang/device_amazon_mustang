@@ -96,6 +96,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 BLOCK_BASED_OTA := true
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_COMMON)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_COMMON)/compatibility_matrix.xml
+
 # Seccomp filter
 BOARD_SECCOMP_POLICY += $(DEVICE_COMMON)/seccomp
 
