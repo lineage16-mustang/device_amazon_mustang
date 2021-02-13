@@ -4,10 +4,6 @@ VENDOR_PATH := vendor/amazon/mustang
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
-# Install init.d scripts
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/99exfat-support:system/etc/init.d/99exfat-support
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Device uses high-density artwork where available
@@ -39,11 +35,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
+    
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -67,8 +61,21 @@ PRODUCT_PACKAGES += \
     libtinyalsa \
     libtinycompress \
     libtinyxml \
+    libaudioroute \
+    libaudiospdif \
+    libeffects \
     libxml2
-    
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_COPY_FILES += \
+    $(TOPDIR)frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    $(TOPDIR)frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(TOPDIR)frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
@@ -92,6 +99,16 @@ PRODUCT_PACKAGES += \
 # Network
 PRODUCT_PACKAGES += \
     netd \
+
+# Wifi
+PRODUCT_PACKAGES += \
+    lib_driver_cmd_mt66xx \
+    libwifi-hal-mt66xx \
+    libwpa_client \
+    hostapd \
+    wificond \
+    wifilogd \
+    wpa_supplicant
 
 WITH_EXFAT := true
 
