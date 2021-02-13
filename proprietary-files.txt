@@ -13,7 +13,6 @@ vendor/bin/dump-ramdump.sh
 vendor/bin/grep
 vendor/bin/gsm0710muxd
 vendor/bin/hostapd_cli
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/bin/hw/android.hardware.cas@1.0-service
 vendor/bin/hw/android.hardware.configstore@1.1-service
 vendor/bin/hw/android.hardware.drm@1.0-service
@@ -207,7 +206,6 @@ vendor/etc/fstab.mdump
 vendor/etc/group
 vendor/etc/iAmCdRom.iso
 vendor/etc/init/amzn_drmprov_check.rc
-vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.cas@1.0-service.rc
 vendor/etc/init/android.hardware.configstore@1.1-service.rc
 vendor/etc/init/android.hardware.drm@1.0-service.rc
@@ -337,7 +335,6 @@ vendor/lib/fireos.hardware.localtime@1.0.so
 vendor/lib/hw/amzn_dha.mt8163.so
 vendor/lib/hw/amzn_drmprov.mt8163.so
 vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl-mediatek.so
 vendor/lib/hw/android.hardware.drm@1.0-impl.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
@@ -402,12 +399,6 @@ vendor/lib/libavservices_minijail_vendor.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc_vendor.so
 vendor/lib/libblisrc32_vendor.so
-vendor/lib/libbluetooth_hw_test.so
-vendor/lib/libbluetooth_mtk_pure.so
-vendor/lib/libbluetooth_mtk.so
-vendor/lib/libbluetooth_relayer.so
-vendor/lib/libbluetoothem_mtk.so
-vendor/lib/libbt-vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcam_hwutils.so
 vendor/lib/libcam_mmp.so

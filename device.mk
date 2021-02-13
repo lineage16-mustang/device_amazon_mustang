@@ -71,7 +71,12 @@ PRODUCT_PACKAGES += \
     
 # Bluetooth
 PRODUCT_PACKAGES += \
-	bluetooth.default
+    libbt-vendor \
+    libbluetooth_mtk
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_COMMON)/bluetooth/config/bt_did.conf:$(TARGET_OUT)/etc/bluetooth/bt_did.conf \
+    $(DEVICE_COMMON)/bluetooth/config/bt_stack.conf:$(TARGET_OUT)/etc/bluetooth/bt_stack.conf
 
 # Graphics
 PRODUCT_PACKAGES += \
