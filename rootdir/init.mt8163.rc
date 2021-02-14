@@ -113,10 +113,14 @@ on post-fs
     symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a
     symlink /dev/block/mmcblk0boot1 /dev/block/platform/bootdevice/by-name/preloader_b
 
-# change owner
+    # change owner
     chown system system /proc/bootprof
     chown root system /proc/mtprof/cputime
     chown root system /proc/mtprof/reboot_pid
+
+    # load netfilter kernel modules
+    insmod /vendor/lib/modules/br_netfilter.ko
+    insmod /vendor/lib/modules/xt_physdev.ko    
 
 on post-fs-data
     #amazon dha
