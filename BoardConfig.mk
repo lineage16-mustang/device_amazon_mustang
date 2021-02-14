@@ -91,6 +91,13 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 0
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
+vendor_lkm_dir := $(DEVICE_PATH)/lkm-4.9
+BOARD_VENDOR_KERNEL_MODULES := \
+  $(vendor_lkm_dir)/bt_drv.ko \
+  $(vendor_lkm_dir)/wlan_drv_gen2.ko \
+  $(vendor_lkm_dir)/wmt_chrdev_wifi.ko \
+  $(vendor_lkm_dir)/wmt_drv.ko
+
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 20971520

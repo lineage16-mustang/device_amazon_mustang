@@ -29,7 +29,7 @@ vendor/bin/hostapd_cli
 #vendor/bin/hw/android.hardware.memtrack@1.0-service
 #vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 #vendor/bin/hw/android.hardware.usb@1.0-service
-#vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
+vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
 vendor/bin/hw/camerahalserver
 vendor/bin/hw/fireos.hardware.amazonthermal@1.0-service
 vendor/bin/hw/fireos.hardware.audio@2.0-service
@@ -221,7 +221,7 @@ vendor/etc/init/amzn_drmprov_check.rc
 #vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 #vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 #vendor/etc/init/android.hardware.usb@1.0-service.rc
-#vendor/etc/init/android.hardware.wifi@1.0-service-mediatek.rc
+vendor/etc/init/android.hardware.wifi@1.0-service-mediatek.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/battery_lifetime_init.rc
@@ -549,10 +549,10 @@ vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libplayreadydrmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/modules/bt_drv.ko
-vendor/lib/modules/wlan_drv_gen2.ko
-vendor/lib/modules/wmt_chrdev_wifi.ko
-vendor/lib/modules/wmt_drv.ko
+#vendor/lib/modules/bt_drv.ko
+#vendor/lib/modules/wlan_drv_gen2.ko
+#vendor/lib/modules/wmt_chrdev_wifi.ko
+#vendor/lib/modules/wmt_drv.ko
 vendor/lib/mtk-ril.so
 vendor/lib/mtk-rilproxy.so
 vendor/lib/soundfx/libaudiopreprocessing.so
