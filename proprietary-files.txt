@@ -44,7 +44,7 @@ vendor/bin/hw/vendor.mediatek.hardware.aal@2.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymanage@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.power@2.0-service
-vendor/bin/hw/wpa_supplicant
+#vendor/bin/hw/wpa_supplicant
 vendor/bin/idme
 vendor/bin/iwpriv
 vendor/bin/kisd
@@ -67,7 +67,7 @@ vendor/bin/toybox_vendor
 vendor/bin/vndservice
 vendor/bin/vndservicemanager
 vendor/bin/wifi_log_levels.sh
-vendor/bin/wifitesttool
+#vendor/bin/wifitesttool
 vendor/bin/wipe_fos_flags
 vendor/bin/wlan_assistant
 vendor/bin/wmt_concurrency
@@ -540,9 +540,9 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwebrtc_audio_preprocessing.so
-vendor/lib/libwifi-hal.so
-vendor/lib/libwifitest.so
-vendor/lib/libwpa_client.so
+#vendor/lib/libwifi-hal.so
+#vendor/lib/libwifitest.so
+#vendor/lib/libwpa_client.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
