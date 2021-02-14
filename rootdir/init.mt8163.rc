@@ -307,18 +307,43 @@ on post-fs-data
     chown system system /sys/class/sensor/m_bio_misc/biobatch
     chown system system /sys/class/sensor/m_bio_misc/bioflush
 
-#Set mlock resource to unlimited
+    # Set mlock resource to unlimited
     setrlimit 8 4294967295 4294967295
 
-# WiFi
+#
+# Connectivity related device nodes & configuration (begin)
+#
+
+    # WiFi
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
     mkdir /data/misc/wpa_supplicant 0770 wifi wifi
     chown wifi wifi /data/misc/wifi
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-# Char device for BT 3.0 HS
+    # BT relayer mode used VCOM
+    chown bluetooth bluetooth /dev/ttyGS2
+    chmod 0660 /dev/ttyGS2
+
+    # Char device for BT 3.0 HS
     chown bluetooth bluetooth /dev/ampc0
     chmod 0660 /dev/ampc0
+
+    #/dev/ttyMT2 for Connectivity BT/FM/GPS usage
+    chmod 0660 /dev/ttyMT2
+    chown system system /dev/ttyMT2
+
+    #/dev/ttyMT1 for GPS 3337 usage
+    chmod 0660 /dev/ttyMT1
+    chown system system /dev/ttyMT1
+
+    # GPS
+    mkdir /data/vendor/gps 0770 gps system
+
+    # GPS EMI
+    chmod 666 /dev/gps_emi
 
 #
 # Connectivity related device nodes & configuration (end)
