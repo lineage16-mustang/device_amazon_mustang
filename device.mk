@@ -96,16 +96,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netd \
 
-# Wifi
-PRODUCT_PACKAGES += \
-    lib_driver_cmd_mt66xx \
-    libwifi-hal-mt66xx \
-    libwpa_client \
-    hostapd \
-    wificond \
-    wifilogd \
-    wpa_supplicant
-
 WITH_EXFAT := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
