@@ -43,13 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/rootdir,root)
 
-# Shim old binaries
-PRODUCT_PACKAGES += \
-	libshim_libbinder \
-	libshim_liblog \
-	libshim_libwvm \
-    libshim_libgui
-
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
