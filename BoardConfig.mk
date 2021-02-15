@@ -96,7 +96,9 @@ BOARD_VENDOR_KERNEL_MODULES := \
   $(vendor_lkm_dir)/bt_drv.ko \
   $(vendor_lkm_dir)/wlan_drv_gen2.ko \
   $(vendor_lkm_dir)/wmt_chrdev_wifi.ko \
-  $(vendor_lkm_dir)/wmt_drv.ko
+  $(vendor_lkm_dir)/wmt_drv.ko \
+  $(vendor_lkm_dir)/br_netfilter.ko \
+  $(vendor_lkm_dir)/xt_physdev.ko
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
