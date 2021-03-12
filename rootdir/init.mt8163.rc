@@ -216,7 +216,8 @@ on post-fs
     insmod /vendor/lib/modules/br_netfilter.ko
     insmod /vendor/lib/modules/xt_physdev.ko    
 
-
+    # Allow writing to the kernel trace log.
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
 
 on post-fs-data
     # amazon dha
